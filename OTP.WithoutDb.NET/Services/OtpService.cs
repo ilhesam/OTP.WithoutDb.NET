@@ -37,7 +37,7 @@ namespace OTP.WithoutDb.NET.Services
             return new GenerateOtpResult(encryptedOtpJsonObj, expireDateTime);
         }
 
-        public OtpResult ValidateOtp(ValidateOtpInput input)
+        public OtpResult VerifyOtp(ValidateOtpInput input)
         {
             var decryptedOtpJsonObj = DecryptOtpJsonObject(input.Key);
 
